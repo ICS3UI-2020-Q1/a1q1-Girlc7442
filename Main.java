@@ -14,16 +14,17 @@ public class Main {
     // create the scanner for user input
     Scanner input = new Scanner(System.in);
 
-    String temp;
+    String temperature;
 
     // ask user for a temperature
     System.out.println("Please enter your temperature in celcius:");
     //initialize the users temperature
-    temp = input.nextLine();
+    int temp = input.nextInt();
 
-    final int CELCIUS_FAHRENHEIT = 9 / 5 + 32;
+    final int CELCIUS_FAHRENHEIT = temp * 9 / 5 + 32;
 
-    int temperature = temp * CELCIUS_FAHRENHEIT;
+    int finalTemp = CELCIUS_FAHRENHEIT;
 
+    System.out.println("your temperature is " + finalTemp);
   }
 }
