@@ -21,10 +21,13 @@ public class Main {
     //initialize the users temperature
     int temp = input.nextInt();
 
+    //Takes the users temperature and applies the formula to convert it to fahrenheit
     final int CELCIUS_FAHRENHEIT = temp * 9 / 5 + 32;
 
+    //initializes the formula
     int finalTemp = CELCIUS_FAHRENHEIT;
 
+    //tell the user the converted temperature
     System.out.println("your temperature is " + finalTemp);
   }
 }
