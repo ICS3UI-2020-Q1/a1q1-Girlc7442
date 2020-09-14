@@ -1,6 +1,8 @@
+import java.util.Scanner;
+
 /**
- *
- * @author 
+ *To convert celcius to fahrenheit
+ * @author Cole Girling
  */
 public class Main {
 
@@ -9,7 +11,19 @@ public class Main {
    * @param args the command line arguments
    */
   public static void main(String[] args) {
-    // TODO code application logic here
-    
+    // create the scanner for user input
+    Scanner input = new Scanner(System.in);
+
+    String temp;
+
+    // ask user for a temperature
+    System.out.println("Please enter your temperature in celcius:");
+    //initialize the users temperature
+    temp = input.nextLine();
+
+    final int CELCIUS_FAHRENHEIT = 9 / 5 + 32;
+
+    int temperature = temp * CELCIUS_FAHRENHEIT;
+
   }
 }
