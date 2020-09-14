@@ -14,6 +14,7 @@ public class Main {
     // create the scanner for user input
     Scanner input = new Scanner(System.in);
 
+    //Declare a variable to store name
     String temperature;
 
     // ask user for a temperature
