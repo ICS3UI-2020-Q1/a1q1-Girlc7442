@@ -14,21 +14,18 @@ public class Main {
     // create the scanner for user input
     Scanner input = new Scanner(System.in);
 
-    //Declare a variable to store name
-    String temperature;
-
     // ask user for a temperature
-    System.out.println("Please enter your temperature in celcius:");
+    System.out.println("Please enter a temperature you would like to convert in degrees Celsius.");
     //initialize the users temperature
     int temp = input.nextInt();
 
     //Takes the users temperature and applies the formula to convert it to fahrenheit
-    final int CELCIUS_FAHRENHEIT = temp * 9 / 5 + 32;
+    int CELCIUS_FAHRENHEIT = temp * 9 / 5 + 32;
 
     //initializes the formula
     int finalTemp = CELCIUS_FAHRENHEIT;
 
     //tell the user the converted temperature
-    System.out.println("your temperature is " + finalTemp);
+    System.out.println(temp + "C is the same as " + finalTemp + "F");
   }
 }
